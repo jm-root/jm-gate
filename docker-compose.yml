@@ -1,0 +1,6 @@
+jm-gate:
+ build: . 
+ ports:
+  - "21000:21000"
+ external_links:
+  - redis
