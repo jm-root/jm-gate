@@ -1,0 +1,8 @@
+{
+  "name": "jm-gate",
+  "version": "0.0.1",
+  "description": "apiDoc for jm-gate",
+  "title": "apiDoc",
+  "url" : "http://localhost:20000/gate",
+  "sampleUrl" : "http://localhost:20000/gate"
+}
