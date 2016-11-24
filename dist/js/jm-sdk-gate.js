@@ -5,6 +5,7 @@ if ((typeof exports !== 'undefined' && typeof module !== 'undefined')) {
 }
 
 (function () {
+    if(jm.sdk.gate) return;
     var sdk = jm.sdk;
     var ms = jm.ms;
 

@@ -1,6 +1,6 @@
 {
   "name": "jm-gate",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "a general gate service",
   "main": "./lib/index",
   "scripts": {
