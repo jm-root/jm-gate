@@ -35,10 +35,12 @@ var env = process.env.NODE_ENV||'development';
 config = config[env]||config['development'];
 config.env = env;
 
-{
-    var env = process.env;
-    config.consul.host = env.consul_host || config.consul.host;
-    config.consul.port = env.consul_port || config.consul.port;
-}
+['port', 'prefix'].forEach(function(key) {
+    process.env[key] && (config[key]=process.env[key]);
+});
+
+['host', 'port'].forEach(function(key) {
+    process.env['consul_' + key] && (config.consul[key]=process.env['consul_' + key]);
+});
 
 module.exports = config;
