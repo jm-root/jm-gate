@@ -5,6 +5,7 @@
   "main": "./lib/index",
   "scripts": {
     "start": "node app",
+    "cluster": "node cluster",
     "test": "node test"
   },
   "repository": {
@@ -23,11 +24,10 @@
   },
   "homepage": "https://github.com/jm-root/jm-gate",
   "dependencies": {
-    "jm-ms-core": "*",
+    "jm-ms": "*",
     "consul": "*"
   },
   "devDependencies": {
-      "jm-ms": "*",
       "jm-sdk-core": "*",
       "bluebird": "*",
       "jshint": "*",
