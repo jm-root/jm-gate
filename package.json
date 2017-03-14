@@ -1,11 +1,11 @@
 {
   "name": "jm-gate",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "a general gate service",
   "main": "./lib/index",
   "scripts": {
-    "start": "node app",
-    "cluster": "node cluster",
+    "start": "jm-server",
+    "cluster": "jm-server --cluster",
     "test": "node test"
   },
   "repository": {
@@ -24,7 +24,7 @@
   },
   "homepage": "https://github.com/jm-root/jm-gate",
   "dependencies": {
-    "jm-ms": "*",
+    "jm-server": "*",
     "consul": "*"
   },
   "devDependencies": {
