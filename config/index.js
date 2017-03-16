@@ -3,7 +3,7 @@ var config = {
     development: {
         port: 21000,
         consul: {
-            host: '10.9.74.238'
+            host: '127.0.0.1'
         },
         modules: {
             gate: {
@@ -14,7 +14,7 @@ var config = {
     production: {
         port: 21000,
         consul: {
-            host: '10.9.74.238'
+            host: 'consul.db'
         },
         modules: {
             gate: {
