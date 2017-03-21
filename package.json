@@ -24,7 +24,7 @@
   },
   "homepage": "https://github.com/jm-root/jm-gate",
   "dependencies": {
-    "jm-server": "*",
+    "jm-server": "~0.1.0",
     "consul": "*"
   },
   "devDependencies": {
