@@ -1,11 +1,11 @@
 {
   "name": "jm-gate",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "a general gate service",
   "main": "./lib/index",
   "scripts": {
-    "start": "jm-server",
-    "cluster": "jm-server --cluster",
+    "start": "node node_modules/jm-server/bin/jm-server",
+    "cluster": "node node_modules/jm-server/bin/jm-server --cluster",
     "test": "node test"
   },
   "repository": {
@@ -24,20 +24,20 @@
   },
   "homepage": "https://github.com/jm-root/jm-gate",
   "dependencies": {
-    "jm-server": "~0.1.0",
-    "consul": "*"
+    "jm-server": "^0.1.6",
+    "consul": "^0.28.0"
   },
   "devDependencies": {
-      "jm-sdk-core": "*",
-      "bluebird": "*",
-      "jshint": "*",
-      "gulp": "*",
-      "gulp-clean": "*",
-      "gulp-concat": "*",
-      "gulp-jshint": "*",
-      "gulp-rename": "*",
-      "gulp-sequence": "*",
-      "gulp-uglify": "*",
-      "gulp-util": "*"
+    "bluebird": "*",
+    "gulp": ">=3.5.6",
+    "gulp-clean": ">=0.3.1",
+    "gulp-concat": ">=2.2.0",
+    "gulp-jshint": ">=1.5.1",
+    "gulp-rename": ">=1.2.0",
+    "gulp-sequence": ">=0.3.0",
+    "gulp-uglify": ">=0.3.1",
+    "gulp-util": ">=2.2.14",
+    "jm-sdk-core": "^0.0.12",
+    "jshint": "*"
   }
 }
